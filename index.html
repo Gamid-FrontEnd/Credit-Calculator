@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Credit Calculator</title>
+</head>
+<body>
+    <div class="calculator_body">
+        <h1>Кредитний Калькулятор</h1>
+        <form>
+            <!-- Input -->
+            <div class="amount_input_form">
+                <h3>Сумма кредиту</h3>
+                <div class="amount_input_number">
+                    <span>₴</span>
+                    <input type="number" id="amount_number" placeholder="Credit Amount" step="100" min="1000" max="50000" >
+                </div>
+                <div class="amount_input_slider">
+                    <p id="amount_slider_output">0</p>
+                    <input type="range" min="1000" max="50000"  step="100" id="amount_slider">
+                </div>
+                <div class="amount_error">
+                    <h4>Будь ласка вкажіть вірну сумму кредиту</h4>
+                </div>
+            </div>
+            <div class="period_input_form">
+                <h3>Строк кредиту</h3>
+                <div class="period_input_number">
+                    <span>Днів</span>
+                    <input type="number" id="period_number" placeholder="Credit Period"  min="7" max="60">
+                </div>
+                <div class="period_input_slider">
+                    <p id="period_slider_output">0</p>
+                    <input type="range" min="7" max="60"   step="1" id="period_slider">
+                </div>
+                <div class="period_error">
+                    <h4>Будь ласка вкажіть вірний строк кредиту</h4>
+                </div>
+            </div>
+
+            <!-- Result -->
+            <div class="results_body">
+                <div class="dayly_pay_result">
+                    <span class="dayly_span">Щоденно: </span>
+                    <span id="dayly_payment">0</span>
+                </div>
+                <div class="total_pay_result">
+                    <span class="total_span">Загалом: </span>
+                    <span id="total_payment">0</span>
+                </div>
+            </div>
+
+            <!-- Get credit button -->
+            <div>
+                <input type="submit" id="submit_button" value="Отримати Кредит" disabled>
+            </div>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
