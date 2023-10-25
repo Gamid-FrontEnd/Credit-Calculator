@@ -1,0 +1,19 @@
+@media screen and (max-width: 450px) {
+    .calculator_body {
+        width: 250px;
+        padding: 10px;
+    }
+
+    .calculator_body h1 {
+        font-size: 20px;
+    }
+
+    .amount_input_form {
+        width: 230px;
+    }
+
+    .period_input_form {
+        width: 230px;
+    }
+  }
+  
